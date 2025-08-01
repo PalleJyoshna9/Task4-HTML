@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Products</h1>
+  <select id="categoryFilter" onchange="filterProducts()">
+    <option value="all">All</option>
+    <option value="clothing">Clothing</option>
+    <option value="electronics">Electronics</option>
+  </select>
+
+  <select id="sortBy" onchange="sortProducts()">
+    <option value="name">Sort by Name</option>
+    <option value="price">Sort by Price</option>
+  </select>
+
+  <div id="products"></div>
+  <script src="script.js"></script>
+</body>
+</html>
